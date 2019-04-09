@@ -21,15 +21,16 @@ export default class Category extends Component {
     const productList = this.state.data.map(item => (
       <li key={item.id}>
         <Item {...item} />
+        <br />
       </li>
     ));
 
     return (
-      <section>
+      <main>
         <h1>Hello category page</h1>
         <NavLink to="/">Go to Home page</NavLink>
         <ul>{productList}</ul>
-      </section>
+      </main>
     );
   }
 }
