@@ -1,14 +1,14 @@
 import React from 'react';
 import './item.css';
+import { maxHeaderSize } from 'http';
 
 const Item = props => {
   const {
     title,
-    description,
     mediaCollection,
     pricing: {
-      label,
-      listPrice: { amount },
+      price: { amount },
+      listPrice: { amount: oldPrice, currency },
     },
   } = props;
   console.log(props);
@@ -17,9 +17,16 @@ const Item = props => {
     <section>
       <img className="item__image" src={mediaCollection[0].thumbUrl} alt="product" />
       <br />
-      <span className="item__name">Name: {title}</span>
+      <span className="item__name">{title}</span>
       <br />
-      <span className="item__price">Price: {label}</span>
+      <span className="item__old-price">
+        {currency}
+        {Math.round(oldPrice / 100)}
+      </span>
+      <span className="item__price">
+        {currency}
+        {amount / 100}
+      </span>
     </section>
   );
 };
