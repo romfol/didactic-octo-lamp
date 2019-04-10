@@ -7,11 +7,15 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <header>Hello Header</header>
-        <Route exact path="/" component={Home} />
-        <Route path="/products" component={Category} />
-      </BrowserRouter>
+      <div className="container">
+        <div className="app">
+          <BrowserRouter>
+            <header>Hello Header</header>
+            <Route exact path="/" component={Home} />
+            <Route path="/products" component={Category} />
+          </BrowserRouter>
+        </div>
+      </div>
     );
   }
 }

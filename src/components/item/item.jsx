@@ -15,11 +15,11 @@ const Item = props => {
 
   return (
     <section>
-      <img src={mediaCollection[0].thumbUrl} alt="product" />
+      <img className="item__image" src={mediaCollection[0].thumbUrl} alt="product" />
       <br />
-      <span>Name: {title}</span>
+      <span className="item__name">Name: {title}</span>
       <br />
-      <span>Price: {label}</span>
+      <span className="item__price">Price: {label}</span>
     </section>
   );
 };

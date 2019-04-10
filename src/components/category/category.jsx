@@ -24,7 +24,7 @@ export default class Category extends Component {
     console.log(match.params);
 
     const productList = data.map(item => (
-      <li className="items__item" key={item.id}>
+      <li className="item" key={item.id}>
         <Item {...item} />
       </li>
     ));
