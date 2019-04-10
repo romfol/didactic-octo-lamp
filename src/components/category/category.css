@@ -1,0 +1,15 @@
+.items {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.items__item {
+  width: 23%;
+  margin: 10px;
+  height: 300px;
+  border: 1px solid #F1F1F1;
+  text-align: center;
+}
+

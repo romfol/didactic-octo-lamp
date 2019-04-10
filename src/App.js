@@ -10,10 +10,18 @@ class App extends Component {
       <BrowserRouter>
         <header>Hello Header</header>
         <Route exact path="/" component={Home} />
-        <Route path="/category" component={Category} />
+        <Route path="/products" component={Category} />
       </BrowserRouter>
     );
   }
 }
 
 export default App;
+
+// {
+//   /* <Link to={`${match.url}/${item.id}`}>
+// <Item {...item} />
+// <br />
+// </Link>
+// <Route path={`${match.url}/${item.id}`} component={Details} /> */
+// }

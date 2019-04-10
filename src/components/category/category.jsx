@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Item from '../item/item';
-import { NavLink } from 'react-router-dom';
+import './category.css';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 export default class Category extends Component {
@@ -18,18 +19,21 @@ export default class Category extends Component {
   }
 
   render() {
-    const productList = this.state.data.map(item => (
-      <li key={item.id}>
+    const { data } = this.state;
+    const { match } = this.props;
+    console.log(match.params);
+
+    const productList = data.map(item => (
+      <li className="items__item" key={item.id}>
         <Item {...item} />
-        <br />
       </li>
     ));
 
     return (
       <main>
         <h1>Hello category page</h1>
-        <NavLink to="/">Go to Home page</NavLink>
-        <ul>{productList}</ul>
+        <Link to="/">Go to Home page</Link>
+        <ul className="items">{productList}</ul>
       </main>
     );
   }

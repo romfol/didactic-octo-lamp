@@ -1,8 +1,9 @@
 import React from 'react';
+import './item.css';
 
 const Item = props => {
   const {
-    name,
+    title,
     description,
     mediaCollection,
     pricing: {
@@ -14,14 +15,11 @@ const Item = props => {
 
   return (
     <section>
-      <span>Name: {name}</span>
+      <img src={mediaCollection[0].thumbUrl} alt="product" />
+      <br />
+      <span>Name: {title}</span>
       <br />
       <span>Price: {label}</span>
-      <br />
-      <span>Amount: {amount}</span>
-      <br />
-      <img src={mediaCollection[0].thumbUrl} alt="product" />
-      <br /> <span>{description}</span>
     </section>
   );
 };
