@@ -1,0 +1,13 @@
+.item__image {
+  margin: 10px;
+}
+
+.item__name {
+  font-weight: bold;
+}
+
+.item__old-price {
+  margin-right: 1em;
+  text-decoration: line-through;
+  color: grey;
+}
