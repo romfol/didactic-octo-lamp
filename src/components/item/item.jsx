@@ -1,6 +1,5 @@
 import React from 'react';
 import './item.css';
-import { maxHeaderSize } from 'http';
 
 const Item = props => {
   const {

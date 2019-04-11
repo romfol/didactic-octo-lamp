@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Category from '../src/components/category/category';
 import Home from '../src/components/home/home';
+import Header from '../src/components/header/header';
 import { Route, BrowserRouter } from 'react-router-dom';
 import './App.css';
 
@@ -10,7 +11,7 @@ class App extends Component {
       <div className="container">
         <div className="app">
           <BrowserRouter>
-            <header>Hello Header</header>
+            <Header />
             <Route exact path="/" component={Home} />
             <Route path="/products" component={Category} />
           </BrowserRouter>
@@ -21,11 +22,3 @@ class App extends Component {
 }
 
 export default App;
-
-// {
-//   /* <Link to={`${match.url}/${item.id}`}>
-// <Item {...item} />
-// <br />
-// </Link>
-// <Route path={`${match.url}/${item.id}`} component={Details} /> */
-// }
