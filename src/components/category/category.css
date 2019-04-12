@@ -1,5 +1,6 @@
 .items {
    padding: 0 32px; 
+   border: 1px dashed cyan;
 }
 
 .items__row {

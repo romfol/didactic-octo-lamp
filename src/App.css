@@ -5,5 +5,5 @@ text-align: center;
 .app {
   max-width: 1280px;
   margin: 0 auto;
-  background-color: grey;
+  border: 1px dashed green;
 }

@@ -1,5 +1,5 @@
 .item {
-  margin: 0 10px 10px;
+  margin:  10px ;
   height: 373px;
   border: 1px solid #F1F1F1;
   border-radius: 5px;
@@ -7,10 +7,10 @@
 }
 
 .item__image {
-  /*sets inline: backgroundImage: `url(${mediaCollection[0].thumbUrl})` */
-  /* background-size: cover; */
-  background-color: #cccccc; /* Used if the image is unavailable */
+  /*sets inline: "backgroundImage: `url(${mediaCollection[0].thumbUrl})`" */
   height: 240px;
+  background-position: 50% 10px; 
+  background-size: auto 215px;
   background-repeat: no-repeat;
 }
 

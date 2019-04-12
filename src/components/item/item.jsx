@@ -19,9 +19,7 @@ const Item = props => {
         className="item__image"
         style={{ backgroundImage: `url(${mediaCollection[0].thumbUrl})` }}
       />
-      <br />
       <span className="item__name">{title}</span>
-      <br />
       <span className="item__old-price">
         {currency}
         {Math.round(oldPrice / 100)}
