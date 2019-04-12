@@ -7,7 +7,7 @@ const Item = props => {
     mediaCollection,
     pricing: {
       price: { amount },
-      listPrice: { amount: oldPrice, currency },
+      listPrice: { amount: oldPrice },
     },
     className,
   } = props;
@@ -19,15 +19,20 @@ const Item = props => {
         className="item__image"
         style={{ backgroundImage: `url(${mediaCollection[0].thumbUrl})` }}
       />
-      <span className="item__name">{title}</span>
-      <span className="item__old-price">
-        {currency}
-        {Math.round(oldPrice / 100)}
-      </span>
-      <span className="item__price">
-        {currency}
-        {amount / 100}
-      </span>
+      <div className="item__name">{title}</div>
+
+      <div className="item__prices">
+        <span className="item__old-price">${Math.round(oldPrice / 100)}</span>
+        <span className="item__price">${amount / 100}</span>
+      </div>
+      <div className="item__buttons">
+        <button class="button1" />
+        <button class="button2" />
+        <button class="button3" />
+        <button class="button4" />
+        <button class="button5" />
+        <button class="button5" />
+      </div>
     </article>
   );
 };
