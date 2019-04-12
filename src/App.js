@@ -9,9 +9,9 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        <Header />
         <div className="app">
           <BrowserRouter>
-            <Header />
             <Route exact path="/" component={Home} />
             <Route path="/products" component={Category} />
           </BrowserRouter>

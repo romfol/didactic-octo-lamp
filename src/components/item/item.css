@@ -1,5 +1,17 @@
+.item {
+  margin: 0 10px 10px;
+  height: 373px;
+  border: 1px solid #F1F1F1;
+  border-radius: 5px;
+  text-align: center;
+}
+
 .item__image {
-  margin: 10px;
+  /*sets inline: backgroundImage: `url(${mediaCollection[0].thumbUrl})` */
+  /* background-size: cover; */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 240px;
+  background-repeat: no-repeat;
 }
 
 .item__name {

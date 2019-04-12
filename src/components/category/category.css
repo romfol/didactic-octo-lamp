@@ -1,15 +1,11 @@
 .items {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  list-style: none;
+   padding: 0 32px; 
 }
 
-.item {
-  width: 23%;
-  margin: 10px;
-  height: 333px;
-  border: 1px solid #F1F1F1;
-  text-align: center;
+.items__row {
+  width: 25%;
+  display: inline-block;
 }
+
+
 

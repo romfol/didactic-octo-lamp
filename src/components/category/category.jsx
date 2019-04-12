@@ -20,18 +20,18 @@ export default class Category extends Component {
 
   render() {
     const { data } = this.state;
-    const { match } = this.props;
-    console.log(match.params);
 
     const productList = data.map(item => (
-      <li className="item" key={item.id}>
-        <Item {...item} />
+      <li key={item.id} className="items__row">
+        <Item className="item" {...item} />
       </li>
     ));
 
     return (
       <main>
-        <h1>Hello category page</h1>
+        {/* for pixel perfect testing*/}
+        <h1 style={{ height: '46px' }}>Hello category page</h1>
+
         <Link to="/">Go to Home page</Link>
         <ul className="items">{productList}</ul>
       </main>

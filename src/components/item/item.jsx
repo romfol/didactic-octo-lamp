@@ -9,12 +9,16 @@ const Item = props => {
       price: { amount },
       listPrice: { amount: oldPrice, currency },
     },
+    className,
   } = props;
-  console.log(props);
+  // console.log(props);
 
   return (
-    <section>
-      <img className="item__image" src={mediaCollection[0].thumbUrl} alt="product" />
+    <article className={className}>
+      <div
+        className="item__image"
+        style={{ backgroundImage: `url(${mediaCollection[0].thumbUrl})` }}
+      />
       <br />
       <span className="item__name">{title}</span>
       <br />
@@ -26,7 +30,7 @@ const Item = props => {
         {currency}
         {amount / 100}
       </span>
-    </section>
+    </article>
   );
 };
 
