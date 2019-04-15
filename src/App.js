@@ -8,15 +8,15 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <>
+      <div className="app">
         <Header />
-        <div className="app">
+        <main>
           <BrowserRouter>
             <Route exact path="/" component={Home} />
             <Route path="/products" component={Category} />
           </BrowserRouter>
-        </div>
-      </>
+        </main>
+      </div>
     );
   }
 }

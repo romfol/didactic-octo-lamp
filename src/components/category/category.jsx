@@ -28,13 +28,11 @@ export default class Category extends Component {
     ));
 
     return (
-      <main>
-        {/* for pixel perfect testing*/}
-        <h1 style={{ height: '46px' }}>Hello category page</h1>
-
+      <div className="category">
+        <h1 className="category__title">Hello category page</h1>
         <Link to="/">Go to Home page</Link>
         <ul className="items">{productList}</ul>
-      </main>
+      </div>
     );
   }
 }

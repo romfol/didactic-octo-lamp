@@ -1,6 +1,6 @@
 .item__buttons {
   margin: 13px 0 0;
-  text-align: left;
+
 }
 
 .item__buttons div {
@@ -16,6 +16,7 @@
   position: relative;
   top: 3.5px; left:3.5px; 
   cursor: pointer;
+ 
 }
 
 .outer-circle {

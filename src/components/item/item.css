@@ -1,32 +1,32 @@
 .item {
-  margin:  8px;
-  padding: 12px 18px; 
-  min-height: 350px;
+  margin: 10px;
+  padding: 13px 18px; 
+  min-height: 372px;
   border: 1px solid #F1F1F1;
   border-radius: 5px;
 }
 
 .item__image {
   /*setted inline: "backgroundImage: `url(${mediaCollection[0].thumbUrl})`" */
-  height: 240px;
+  height: 255px;
   background-position: 50% 0; 
-  background-size: auto 215px;
+  background-size: auto 228px;
   background-repeat: no-repeat;
 }
 
 .item__name {
-  text-align: left;
+  
   word-wrap: break-word;
   font-weight: bold;
 }
 
 .item__prices {
-  margin: 30px 0 0;
-  text-align: left;
+  margin: 35px 0 0;
+
 }
 
 .item__old-price {
-  margin-right: 1em;
+  margin-right: 27px;
   text-decoration: line-through;
   color: grey;
 }
