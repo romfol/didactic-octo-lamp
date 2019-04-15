@@ -13,15 +13,15 @@
   height:22px;
   border: 1px solid #F0F0F0; 
   position: relative;
-  top: 4px; left:3px; 
+  top: 3px; left:2px; 
   cursor: pointer;
 }
 
 .outer-circle {
   border-radius: 50%;
-  border:1px solid black;
-  width:28px;
-  height:28px;
+  border:2px solid black;
+  width:27px;
+  height:27px;
   display: inline-block;
 }
 
@@ -48,5 +48,3 @@
 .item__buttons #button6 {
   background-color: white; 
 }
-
-            /* #F0F0F0 */
