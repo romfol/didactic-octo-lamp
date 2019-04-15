@@ -5,7 +5,8 @@ export default class ItemButtons extends Component {
   state = { activeButton: 'button1' };
 
   hanleClick = e => {
-    this.setState({ activeButton: e.target.id });
+    const { id } = e.target;
+    id && this.setState({ activeButton: id });
     console.log(e.target.id);
   };
   render() {
@@ -13,19 +14,19 @@ export default class ItemButtons extends Component {
 
     return (
       <div className="item__buttons" onClick={e => this.hanleClick(e)}>
-        <div>
+        <div className={activeButton === 'button1' ? 'outer-circle' : ''}>
           <button id="button1" />
         </div>
-        <div>
+        <div className={activeButton === 'button2' ? 'outer-circle' : ''}>
           <button id="button2" />
         </div>
-        <div>
+        <div className={activeButton === 'button3' ? 'outer-circle' : ''}>
           <button id="button3" />
         </div>
-        <div>
+        <div className={activeButton === 'button4' ? 'outer-circle' : ''}>
           <button id="button4" />
         </div>
-        <div>
+        <div className={activeButton === 'button5' ? 'outer-circle' : ''}>
           <button id="button5" />
         </div>
         <div className={activeButton === 'button6' ? 'outer-circle' : ''}>
