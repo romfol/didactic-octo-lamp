@@ -8,7 +8,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <>
         <Header />
         <div className="app">
           <BrowserRouter>
@@ -16,7 +16,7 @@ class App extends Component {
             <Route path="/products" component={Category} />
           </BrowserRouter>
         </div>
-      </div>
+      </>
     );
   }
 }

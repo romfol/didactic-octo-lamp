@@ -1,0 +1,27 @@
+.item__buttons {
+  margin: 13px 0 0;
+  text-align: left;
+}
+
+.item__buttons div {
+  display: inline-block;
+}
+
+.item__buttons button {
+  border-radius: 50%;
+  width:19px;
+  height:19px;
+  background-color: black; 
+  border: none;
+  position: relative;
+  top: 3.5px; left:3.5px; 
+  cursor: pointer;
+}
+
+.outer-circle {
+  border-radius: 50%;
+  border:1px solid black;
+  width:26px;
+  height:26px;
+  display: inline-block;
+}

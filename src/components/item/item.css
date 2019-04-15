@@ -7,7 +7,7 @@
 }
 
 .item__image {
-  /*sets inline: "backgroundImage: `url(${mediaCollection[0].thumbUrl})`" */
+  /*setted inline: "backgroundImage: `url(${mediaCollection[0].thumbUrl})`" */
   height: 240px;
   background-position: 50% 0; 
   background-size: auto 215px;
@@ -29,19 +29,4 @@
   margin-right: 1em;
   text-decoration: line-through;
   color: grey;
-}
-
-.item__buttons {
-  margin: 13px 0 0;
-  text-align: left;
-}
-
-.item__buttons button {
-    border-radius: 50%;
-    background-color: #4CAF50; 
-    border: 1px solid red;
-    padding: 10px;
-    margin: 4px 2px;
-    cursor: pointer;
-  
 }
