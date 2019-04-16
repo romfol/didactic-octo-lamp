@@ -25,26 +25,4 @@
   display: inline-block;
 }
 
-.item__buttons #button1 {
-  background-color: black; 
-  }
 
-.item__buttons #button2 {
-  background-color: #6C5251; 
-}
-
-.item__buttons #button3 {
-  background-color: #B2B2B2; 
-}
-
-.item__buttons #button4 {
-  background-color: #00669F; 
-}
-
-.item__buttons #button5 {
-  background-color: #2A9C3C; 
-}
-
-.item__buttons #button6 {
-  background-color: white; 
-}
