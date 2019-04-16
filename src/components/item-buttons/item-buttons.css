@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-.outer-circle {
+.item__outer-circle {
   border-radius: 50%;
   border:2px solid black;
   width:27px;
