@@ -1,15 +1,21 @@
-.items {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  list-style: none;
+.category__title{
+    text-align: center;
+    height: 40px;
 }
 
-.item {
-  width: 23%;
-  margin: 10px;
-  height: 333px;
-  border: 1px solid #F1F1F1;
+.category a{
+  display: block;
   text-align: center;
 }
+
+ .items {
+  margin: 0 -10px;
+} 
+
+.items__row {
+  width: 25%;
+  display: inline-block;
+}
+
+
 

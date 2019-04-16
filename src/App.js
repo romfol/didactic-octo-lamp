@@ -8,14 +8,14 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="app">
+      <div className="app">
+        <Header />
+        <main>
           <BrowserRouter>
-            <Header />
             <Route exact path="/" component={Home} />
             <Route path="/products" component={Category} />
           </BrowserRouter>
-        </div>
+        </main>
       </div>
     );
   }

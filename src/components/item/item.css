@@ -1,13 +1,30 @@
-.item__image {
+.item {
   margin: 10px;
+  padding: 13px 18px; 
+  min-height: 373px;
+  border: 1px solid #F4F4F4;
+  border-radius: 5px;
+}
+
+.item__image {
+  /*setted inline: "backgroundImage: `url(${mediaCollection[0].thumbUrl})`" */
+  height: 255px;
+  background-position: 50% 0; 
+  background-size: auto 228px;
+  background-repeat: no-repeat;
 }
 
 .item__name {
+  word-wrap: break-word;
   font-weight: bold;
 }
 
+.item__prices {
+  margin: 35px 0 0;
+}
+
 .item__old-price {
-  margin-right: 1em;
+  margin-right: 27px;
   text-decoration: line-through;
   color: grey;
 }

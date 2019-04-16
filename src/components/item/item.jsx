@@ -1,5 +1,6 @@
 import React from 'react';
 import './item.css';
+import ItemButtons from '../item-buttons/item-buttons';
 
 const Item = props => {
   const {
@@ -7,26 +8,24 @@ const Item = props => {
     mediaCollection,
     pricing: {
       price: { amount },
-      listPrice: { amount: oldPrice, currency },
+      listPrice: { amount: oldPrice },
     },
+    className,
   } = props;
-  console.log(props);
 
   return (
-    <section>
-      <img className="item__image" src={mediaCollection[0].thumbUrl} alt="product" />
-      <br />
-      <span className="item__name">{title}</span>
-      <br />
-      <span className="item__old-price">
-        {currency}
-        {Math.round(oldPrice / 100)}
-      </span>
-      <span className="item__price">
-        {currency}
-        {amount / 100}
-      </span>
-    </section>
+    <article className={className}>
+      <div
+        className="item__image"
+        style={{ backgroundImage: `url(${mediaCollection[0].thumbUrl})` }}
+      />
+      <div className="item__name">{title}</div>
+      <div className="item__prices">
+        <span className="item__old-price">${Math.round(oldPrice / 100)}</span>
+        <span className="item__price">${amount / 100}</span>
+      </div>
+      <ItemButtons />
+    </article>
   );
 };
 

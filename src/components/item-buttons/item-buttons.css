@@ -1,0 +1,28 @@
+.item__buttons {
+  margin: 14px 0 0 1px;
+}
+
+.item__buttons div {
+  display: inline-block;
+}
+
+.item__buttons button {
+  border-radius: 50%;
+  margin-right: 10px; 
+  width:22px;
+  height:22px;
+  border: 1px solid #F0F0F0; 
+  position: relative;
+  top: 3px; left:2px; 
+  cursor: pointer;
+}
+
+.item__outer-circle {
+  border-radius: 50%;
+  border:2px solid black;
+  width:27px;
+  height:27px;
+  display: inline-block;
+}
+
+
