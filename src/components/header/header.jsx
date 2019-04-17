@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css';
 import { Logo, SearchIcon, ContactIcon, ShoppingCartIcon, ArrowDown } from '../icons/';
+import { Filters } from '../filters/filters';
 
 const Header = () => {
   return (
@@ -33,7 +34,7 @@ const Header = () => {
         </section>
       </nav>
       <section className="header__photo" />
-      <section className="filters" />
+      <Filters />
     </header>
   );
 };

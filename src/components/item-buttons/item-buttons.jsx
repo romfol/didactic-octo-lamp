@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './item-buttons.css';
-import colors from '../helpers/colors';
+import { colorsButtons as colors } from '../helpers';
 
 export default class ItemButtons extends Component {
   state = { activeButtonIndex: 0 };
