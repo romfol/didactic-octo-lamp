@@ -3,35 +3,31 @@
   margin: 0 auto;
 }
 
-.header__line {
+.header__messaging-line {
   height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #F15F2E;
+  color: white;
+  font-size: 12px;
 }
 
 .nav {
   height:65px;
   display: flex;
- 
   justify-content: space-between;
   background-color: blue;
 }
 
 .nav__logo {
   background-color: pink;
- 
-  /* width: 200px;
-  height: 50px; */
-  
 }
 
 .nav__search {
   background-color: black;
- 
 }
 
 .nav__menu {
   background-color: yellow;
-
-  /* width: 200px;
-  height: 200px; */
 }
