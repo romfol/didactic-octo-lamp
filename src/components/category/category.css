@@ -1,4 +1,4 @@
-.category__title{
+.category__greet{
     text-align: center;
     height: 40px;
 }
@@ -6,6 +6,30 @@
 .category a{
   display: block;
   text-align: center;
+}
+
+.category__data {
+  height: 57px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.category__title {
+  font-weight: bold;
+}
+
+.category__sort {
+    width: 90px;
+    background-color: white;
+    color: #6FA69B;
+    border: 1px solid #6FA69B;
+    border-radius: 5px;
+    padding: 4px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
 }
 
  .items {
