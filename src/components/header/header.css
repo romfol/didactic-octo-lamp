@@ -17,17 +17,46 @@
   height:65px;
   display: flex;
   justify-content: space-between;
-  background-color: blue;
+  font-weight: bold;
 }
 
 .nav__logo {
-  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11.25%;
 }
 
 .nav__search {
-  background-color: black;
+  width: 42.9%;
+  display: flex;
+  align-items: center;
+  
+  border-right: 1px solid #EDEDED; 
+  border-left: 1px solid #EDEDED;   
+}
+
+.nav__input {
+  margin-left: 20px;
+  border: none;
+}
+
+::placeholder{
+  font-size: 16px;
+    color: #BDBDBD;
 }
 
 .nav__menu {
-  background-color: yellow;
+  width: 36.91%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-right: 1px solid #EDEDED; 
+}
+
+.nav__icons {
+  width: 8.94%; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
