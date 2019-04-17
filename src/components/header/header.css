@@ -60,3 +60,15 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.header__photo {
+  background-image: url('background-header.jpg');
+  background-repeat: no-repeat;
+  height: 320px;
+}
+
+.filters {
+  height:70px;
+  background-color: #F4F5F0;
+}
+
