@@ -9,7 +9,7 @@
 }
 
 .category__data {
-  height: 57px;
+  height: 67px;
   display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -20,12 +20,12 @@
 }
 
 .category__sort {
-    width: 90px;
+    width: 87px;
     background-color: white;
-    color: #6FA69B;
-    border: 1px solid #6FA69B;
+    color: grey;
+    border: 1px solid grey;
     border-radius: 5px;
-    padding: 4px;
+    padding: 3.5px;
     text-align: center;
     font-weight: 700;
     font-size: 16px;
@@ -33,7 +33,7 @@
 }
 
  .items {
-  margin: 0 -10px;
+  margin: -10px;
 } 
 
 .items__row {
