@@ -54,6 +54,11 @@
   border-right: 1px solid #EDEDED; 
 }
 
+.nav__menu div:hover{
+  background-color: orangered;
+  cursor: pointer;
+} 
+
 .nav__icons {
   width: 8.94%; 
   display: flex;

@@ -24,3 +24,9 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+.filters button:hover{
+  background-color: green;
+  color: black;
+  
+} 

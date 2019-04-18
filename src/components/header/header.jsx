@@ -22,7 +22,7 @@ const Header = () => {
             More Styles <ArrowDown />
           </div>
           <div>Sale</div>
-          <div className="nav__rugs">Shop All Rugs</div>
+          <div>Shop All Rugs</div>
         </section>
         <section className="nav__icons">
           <div className="nav__contact">
