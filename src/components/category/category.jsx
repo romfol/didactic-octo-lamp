@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 export default class Category extends Component {
-  state = { data: [], totalItems: <Loader />, activePage: 1 };
+  state = { data: [], totalItems: <Loader />, activePage: 1, itemsPerPage: 16 };
 
   goPageForward = () => {
     this.setState({
@@ -17,8 +17,9 @@ export default class Category extends Component {
 
     axios
       .get(
-        `https://qa-api.wovenlyrugs.com/products?page=${this.state.activePage +
-          1}&page_size=16&size=runners&group=Rug`
+        `https://qa-api.wovenlyrugs.com/products?page=${this.state.activePage + 1}&page_size=${
+          this.state.itemsPerPage
+        }&size=runners&group=Rug`
       )
       .then(response => {
         this.setState({
@@ -37,8 +38,9 @@ export default class Category extends Component {
 
     axios
       .get(
-        `https://qa-api.wovenlyrugs.com/products?page=${this.state.activePage -
-          1}&page_size=16&size=runners&group=Rug`
+        `https://qa-api.wovenlyrugs.com/products?page=${this.state.activePage - 1}&page_size=${
+          this.state.itemsPerPage
+        }&size=runners&group=Rug`
       )
       .then(response => {
         this.setState({
@@ -53,9 +55,9 @@ export default class Category extends Component {
   componentDidMount() {
     axios
       .get(
-        `https://qa-api.wovenlyrugs.com/products?page=${
-          this.state.activePage
-        }&page_size=16&size=runners&group=Rug`
+        `https://qa-api.wovenlyrugs.com/products?page=${this.state.activePage}&page_size=${
+          this.state.itemsPerPage
+        }&size=runners&group=Rug`
       )
       .then(response => {
         this.setState({
@@ -91,6 +93,7 @@ export default class Category extends Component {
           totalItems={this.state.totalItems}
           goPageForward={this.goPageForward}
           goPageBack={this.goPageBack}
+          itemsPerPage={this.state.itemsPerPage}
         />
         <h1 className="category__greet">Hello category page</h1>
         <Link to="/">Go to Home page</Link>

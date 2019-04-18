@@ -3,22 +3,30 @@ import './pagination.css';
 import { ArrowLeft, ArrowRight } from '../icons';
 
 export const Pagination = props => {
-  const { goPageForward, goPageBack, totalItems, activePage } = props;
+  const { goPageForward, goPageBack, totalItems, activePage, itemsPerPage } = props;
 
-  const itemsPerPage = 16;
   const pagesAmount = () => Math.ceil(totalItems / itemsPerPage);
 
   return !isNaN(totalItems) ? (
     <section className="pagination">
-      <div onClick={goPageBack}>
+      <button
+        onClick={goPageBack}
+        disabled={activePage <= 1}
+        className="pagination__go-back-button"
+      >
         {/* couldnt handle onclick directly*/}
         <ArrowLeft />
-      </div>
-      PAGE {activePage} OF {pagesAmount()}
-      <div onClick={goPageForward}>
-        {/* couldnt handle onclick directly*/}
+      </button>
+      <span className="pagination__data">
+        PAGE {activePage} OF {pagesAmount()}
+      </span>
+      <button
+        onClick={goPageForward}
+        disabled={activePage === pagesAmount()}
+        className="pagination__go-forward-button"
+      >
         <ArrowRight />
-      </div>
+      </button>
     </section>
   ) : null;
 };
