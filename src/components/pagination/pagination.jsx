@@ -14,7 +14,6 @@ export const Pagination = props => {
         disabled={activePage <= 1}
         className="pagination__go-back-button"
       >
-        {/* couldnt handle onclick directly*/}
         <ArrowLeft />
       </button>
       <span className="pagination__data">
