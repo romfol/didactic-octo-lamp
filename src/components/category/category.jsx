@@ -42,7 +42,6 @@ export default class Category extends Component {
       )
       .then(response => {
         this.setState({
-          activePage: this.state.activePage - 1,
           data: response.data.result.data,
         });
       })
