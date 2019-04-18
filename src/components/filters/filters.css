@@ -2,6 +2,8 @@
   height:70px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   background-color: #F4F5F0;
 }
 
@@ -10,7 +12,7 @@
 }
 
 .filters button {
-  width: 110px;
+  width: 100px;
   background-color: white;
   color: #6FA69B;
   border: 1px solid #6FA69B;
@@ -18,7 +20,7 @@
   padding: 5px;
   margin-right: 20px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   cursor: pointer;
 }

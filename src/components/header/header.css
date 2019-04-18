@@ -62,8 +62,8 @@
 }
 
 .header__photo {
+  height: 320px;
   background-image: url('background-header.jpg');
   background-repeat: no-repeat;
-  height: 320px;
 }
 

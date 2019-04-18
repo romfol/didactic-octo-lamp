@@ -20,15 +20,17 @@
 }
 
 .category__sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
     width: 87px;
     background-color: white;
     color: grey;
     border: 1px solid grey;
     border-radius: 5px;
-    padding: 3.5px;
-    text-align: center;
+    padding: 5.5px 3.5px 4.5px 17px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 13px;
     cursor: pointer;
 }
 
