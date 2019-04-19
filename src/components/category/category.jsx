@@ -20,49 +20,55 @@ export default class Category extends Component {
   goPageForward = () => {
     const { activePage, itemsPerPage } = this.state;
 
-    this.setState({
-      activePage: activePage + 1,
-      loaded: false,
-    });
-
-    axios
-      .get(
-        `https://qa-api.wovenlyrugs.com/products?page=${activePage +
-          1}&page_size=${itemsPerPage}&size=runners&group=Rug`
-      )
-      .then(response => {
-        this.setState({
-          data: response.data.result.data,
-          loaded: true,
-        });
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
+    this.setState(
+      {
+        activePage: activePage + 1,
+        loaded: false,
+      },
+      () =>
+        axios
+          .get(
+            `https://qa-api.wovenlyrugs.com/products?page=${
+              this.state.activePage
+            }&page_size=${itemsPerPage}&size=runners&group=Rug`
+          )
+          .then(response => {
+            this.setState({
+              data: response.data.result.data,
+              loaded: true,
+            });
+          })
+          .catch(function(error) {
+            console.log(error);
+          })
+    );
   };
 
   goPageBack = () => {
     const { activePage, itemsPerPage } = this.state;
 
-    this.setState({
-      activePage: activePage - 1,
-      loaded: false,
-    });
-
-    axios
-      .get(
-        `https://qa-api.wovenlyrugs.com/products?page=${activePage -
-          1}&page_size=${itemsPerPage}&size=runners&group=Rug`
-      )
-      .then(response => {
-        this.setState({
-          data: response.data.result.data,
-          loaded: true,
-        });
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
+    this.setState(
+      {
+        activePage: activePage - 1,
+        loaded: false,
+      },
+      () =>
+        axios
+          .get(
+            `https://qa-api.wovenlyrugs.com/products?page=${
+              this.state.activePage
+            }&page_size=${itemsPerPage}&size=runners&group=Rug`
+          )
+          .then(response => {
+            this.setState({
+              data: response.data.result.data,
+              loaded: true,
+            });
+          })
+          .catch(function(error) {
+            console.log(error);
+          })
+    );
   };
 
   componentDidMount() {
