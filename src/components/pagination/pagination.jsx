@@ -1,9 +1,10 @@
 import React from 'react';
 import './pagination.css';
 import { ArrowLeft, ArrowRight } from '../icons';
+import { ActivePageLoader } from '../loader/active-page-loader';
 
 export const Pagination = props => {
-  const { goPageForward, goPageBack, totalItems, activePage, itemsPerPage } = props;
+  const { goPageForward, goPageBack, totalItems, activePage, itemsPerPage, loaded } = props;
 
   const pagesAmount = () => Math.ceil(totalItems / itemsPerPage);
 
@@ -17,7 +18,7 @@ export const Pagination = props => {
         <ArrowLeft />
       </button>
       <span className="pagination__data">
-        PAGE {activePage} OF {pagesAmount()}
+        PAGE {loaded ? activePage : <ActivePageLoader />} OF {pagesAmount()}
       </span>
       <button
         onClick={goPageForward}

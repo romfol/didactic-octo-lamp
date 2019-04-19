@@ -1,7 +1,7 @@
 import React from 'react';
-import './loader.css';
+import './category-title-loader.css';
 
-export const Loader = () => {
+export const CategoryTitleLoader  = () => {
   return (
     <div className="lds-ellipsis">
       <div />

@@ -2,28 +2,38 @@ import React, { Component } from 'react';
 import Item from '../item/item';
 import { Pagination } from '../pagination/pagination';
 import { ArrowDown } from '../icons';
-import { Loader } from '../loader/loader';
+import { CategoryTitleLoader } from '../loader/category-title-loader';
+
 import './category.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 export default class Category extends Component {
-  state = { data: [], totalItems: <Loader />, activePage: 1, itemsPerPage: 16 };
+  state = {
+    data: [],
+    totalItems: <CategoryTitleLoader />,
+    activePage: 1,
+    itemsPerPage: 16,
+    loaded: true,
+  };
 
   goPageForward = () => {
+    const { activePage, itemsPerPage } = this.state;
+
     this.setState({
-      activePage: this.state.activePage + 1,
+      activePage: activePage + 1,
+      loaded: false,
     });
 
     axios
       .get(
-        `https://qa-api.wovenlyrugs.com/products?page=${this.state.activePage + 1}&page_size=${
-          this.state.itemsPerPage
-        }&size=runners&group=Rug`
+        `https://qa-api.wovenlyrugs.com/products?page=${activePage +
+          1}&page_size=${itemsPerPage}&size=runners&group=Rug`
       )
       .then(response => {
         this.setState({
           data: response.data.result.data,
+          loaded: true,
         });
       })
       .catch(function(error) {
@@ -32,19 +42,22 @@ export default class Category extends Component {
   };
 
   goPageBack = () => {
+    const { activePage, itemsPerPage } = this.state;
+
     this.setState({
-      activePage: this.state.activePage - 1,
+      activePage: activePage - 1,
+      loaded: false,
     });
 
     axios
       .get(
-        `https://qa-api.wovenlyrugs.com/products?page=${this.state.activePage - 1}&page_size=${
-          this.state.itemsPerPage
-        }&size=runners&group=Rug`
+        `https://qa-api.wovenlyrugs.com/products?page=${activePage -
+          1}&page_size=${itemsPerPage}&size=runners&group=Rug`
       )
       .then(response => {
         this.setState({
           data: response.data.result.data,
+          loaded: true,
         });
       })
       .catch(function(error) {
@@ -94,6 +107,7 @@ export default class Category extends Component {
           goPageForward={this.goPageForward}
           goPageBack={this.goPageBack}
           itemsPerPage={this.state.itemsPerPage}
+          loaded={this.state.loaded}
         />
         <h1 className="category__greet">Hello category page</h1>
         <Link to="/">Go to Home page</Link>
