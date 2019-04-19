@@ -1,4 +1,4 @@
-.category__title{
+.category__greet{
     text-align: center;
     height: 40px;
 }
@@ -8,8 +8,34 @@
   text-align: center;
 }
 
+.category__data {
+  height: 67px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.category__title {
+  font-weight: bold;
+}
+
+.category__sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    width: 87px;
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5.5px 3.5px 4.5px 17px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+}
+
  .items {
-  margin: 0 -10px;
+  margin: -10px;
 } 
 
 .items__row {

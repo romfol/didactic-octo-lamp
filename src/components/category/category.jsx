@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Item from '../item/item';
+import { ArrowDown } from '../icons';
 import './category.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -28,11 +29,17 @@ export default class Category extends Component {
     ));
 
     return (
-      <div className="category">
-        <h1 className="category__title">Hello category page</h1>
-        <Link to="/">Go to Home page</Link>
+      <section className="category">
+        <div className="category__data">
+          <span className="category__title">769 Rugs</span>
+          <button className="category__sort">
+            Sort <ArrowDown />
+          </button>
+        </div>
         <ul className="items">{productList}</ul>
-      </div>
+        <h1 className="category__greet">Hello category page</h1>
+        <Link to="/">Go to Home page</Link>
+      </section>
     );
   }
 }
