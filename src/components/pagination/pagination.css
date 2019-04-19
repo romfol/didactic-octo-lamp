@@ -1,0 +1,31 @@
+.pagination {
+  margin-top:37px;
+  display: flex;
+  justify-content: center;
+}
+.pagination__data {
+  border-top: 1px solid #056551;
+  border-bottom: 1px solid #056551;
+  padding: 13px 41px 11px 49px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pagination button {
+  border: 1px solid #056551;
+  padding: 11px 23px;
+  background-color: white;
+}
+
+.pagination button:hover {
+  background-color: yellowgreen;
+}
+
+.pagination__go-back-button {
+  border-radius: 5px 0 0 5px;
+}
+
+
+.pagination__go-forward-button {
+  border-radius: 0 5px 5px 0;
+}
