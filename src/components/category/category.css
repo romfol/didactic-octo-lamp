@@ -44,10 +44,15 @@
   display: inline-block;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .items__row {
-    width: 50%;
+    width: 33.33%;
   }
+  .items {
+    margin: -10px 0;
+    padding: 0 22px;
+  } 
+
 }
 
 

@@ -28,4 +28,9 @@
   height:27px;
 }
 
+@media (max-width: 1024px) {
+  .item__buttons {
+    margin-top: 11px;
+  }
+}
 

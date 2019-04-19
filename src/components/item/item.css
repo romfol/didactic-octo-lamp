@@ -28,3 +28,24 @@
   text-decoration: line-through;
   color: grey;
 }
+
+@media (max-width: 1024px) {
+  .item {
+    margin: 10px;
+    padding: 13px 10px; 
+    min-height: 250px;
+
+  }
+  .item__image {
+    /*setted inline: "backgroundImage: `url(${mediaCollection[0].thumbUrl})`" */
+    height: 245px;
+  } 
+
+  .item__prices {
+    margin: 4px 0 0;
+  }
+
+  .item__old-price {
+    margin-right: 10px;
+  }
+}
