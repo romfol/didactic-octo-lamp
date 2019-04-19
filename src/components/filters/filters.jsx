@@ -5,9 +5,9 @@ import { filterButtons as buttons } from '../helpers';
 export const Filters = () => {
   return (
     <section className="filters">
-      {buttons.map((title, i) => {
-        return <button key={i}>{title}</button>;
-      })}
+      {buttons.map((title, i) => (
+        <button key={i}>{title}</button>
+      ))}
     </section>
   );
 };
