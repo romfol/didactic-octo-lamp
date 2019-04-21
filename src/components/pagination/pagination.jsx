@@ -3,9 +3,14 @@ import './pagination.css';
 import { ArrowLeft, ArrowRight } from '../icons';
 import { ActivePageLoader } from '../loader/active-page-loader';
 
-export const Pagination = props => {
-  const { goPageForward, goPageBack, totalItems, activePage, itemsPerPage, loaded } = props;
-
+export const Pagination = ({
+  goPageForward,
+  goPageBack,
+  totalItems,
+  activePage,
+  itemsPerPage,
+  loaded,
+}) => {
   const pagesAmount = () => Math.ceil(totalItems / itemsPerPage);
 
   return !isNaN(totalItems) ? (
