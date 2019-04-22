@@ -18,13 +18,10 @@ export default class Category extends Component {
   };
 
   goPageForward = () => {
-    const { activePage, itemsPerPage } = this.state;
+    const { itemsPerPage } = this.state;
 
     this.setState(
-      {
-        activePage: activePage + 1,
-        loaded: false,
-      },
+      state => ({ activePage: state.activePage + 1, loaded: false }),
       () =>
         axios
           .get(
@@ -45,13 +42,10 @@ export default class Category extends Component {
   };
 
   goPageBack = () => {
-    const { activePage, itemsPerPage } = this.state;
+    const { itemsPerPage } = this.state;
 
     this.setState(
-      {
-        activePage: activePage - 1,
-        loaded: false,
-      },
+      state => ({ activePage: state.activePage - 1, loaded: false }),
       () =>
         axios
           .get(
