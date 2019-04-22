@@ -13,25 +13,27 @@ export const Pagination = ({
 }) => {
   const pagesAmount = () => Math.ceil(totalItems / itemsPerPage);
 
-  return !isNaN(totalItems) ? (
-    <section className="pagination">
-      <button
-        onClick={goPageBack}
-        disabled={activePage <= 1}
-        className="pagination__go-back-button"
-      >
-        <ArrowLeft />
-      </button>
-      <span className="pagination__data">
-        PAGE {loaded ? activePage : <ActivePageLoader />} OF {pagesAmount()}
-      </span>
-      <button
-        onClick={goPageForward}
-        disabled={activePage === pagesAmount()}
-        className="pagination__go-forward-button"
-      >
-        <ArrowRight />
-      </button>
-    </section>
-  ) : null;
+  return (
+    !isNaN(totalItems) && (
+      <section className="pagination">
+        <button
+          onClick={goPageBack}
+          disabled={activePage <= 1}
+          className="pagination__go-back-button"
+        >
+          <ArrowLeft />
+        </button>
+        <span className="pagination__data">
+          PAGE {loaded ? activePage : <ActivePageLoader />} OF {pagesAmount()}
+        </span>
+        <button
+          onClick={goPageForward}
+          disabled={activePage === pagesAmount()}
+          className="pagination__go-forward-button"
+        >
+          <ArrowRight />
+        </button>
+      </section>
+    )
+  );
 };
