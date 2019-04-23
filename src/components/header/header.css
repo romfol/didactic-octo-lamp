@@ -72,3 +72,10 @@
   background-repeat: no-repeat;
 }
 
+/* temporary for testing extra small screen*/
+@media (max-width: 375px) {
+  .nav__menu, .nav__icons {
+    display: none;
+  }
+  
+}

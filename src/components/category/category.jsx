@@ -13,7 +13,7 @@ export default class Category extends Component {
     data: [],
     totalItems: <CategoryTitleLoader />,
     activePage: 1,
-    itemsPerPage: 16,
+    itemsPerPage: 12,
     loaded: true,
   };
 

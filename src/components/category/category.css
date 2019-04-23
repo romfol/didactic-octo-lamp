@@ -52,6 +52,16 @@
     margin: -10px 0;
     padding: 0 22px;
   } 
+}
+
+@media (max-width: 375px) {
+  .items__row {
+    width: 50%;
+  }
+  /* .items {
+    margin: -10px 0;
+    padding: 0 22px;
+  }  */
 
 }
 
