@@ -3,9 +3,7 @@ import Item from '../item/item';
 import { Pagination } from '../pagination/pagination';
 import { ArrowDown } from '../icons';
 import { CategoryTitleLoader } from '../loader/category-title-loader';
-
 import './category.css';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 export default class Category extends Component {
@@ -109,8 +107,6 @@ export default class Category extends Component {
           itemsPerPage={this.state.itemsPerPage}
           loaded={this.state.loaded}
         />
-        <h1 className="category__greet">Hello category page</h1>
-        <Link to="/">Go to Home page</Link>
       </section>
     );
   }

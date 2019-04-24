@@ -2,6 +2,7 @@ import React from 'react';
 import './header.css';
 import { Logo, SearchIcon, ContactIcon, ShoppingCartIcon, ArrowDown } from '../icons/';
 import { Filters } from '../filters/filters';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -9,7 +10,9 @@ const Header = () => {
       <div className="header__messaging-line">Line for messaging</div>
       <nav className="nav">
         <section className="nav__logo">
+        <Link to="/">
           <Logo />
+          </Link>
         </section>
         <section className="nav__search">
           <SearchIcon />
