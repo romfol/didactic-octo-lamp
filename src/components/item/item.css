@@ -41,12 +41,16 @@
     /*setted inline: "backgroundImage: `url(${mediaCollection[0].thumbUrl})`" */
     height: 245px;
   } 
-
   .item__prices {
     margin: 4px 0 0;
   }
-
   .item__old-price {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .item {
+    margin: 5px;
   }
 }

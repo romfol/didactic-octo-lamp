@@ -28,5 +28,11 @@
 .filters button:hover{
   background-color: green;
   color: black;
-  
 } 
+
+@media (max-width: 375px) {
+  .filters button {
+    padding: 1px;
+    margin-right: 5px;
+  }
+}

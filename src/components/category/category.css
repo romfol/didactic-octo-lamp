@@ -55,14 +55,19 @@
 }
 
 @media (max-width: 375px) {
+  .items {
+    padding: 0 7px 0 2px;
+    margin: 0;
+  }
+
   .items__row {
     width: 50%;
   }
-  /* .items {
-    margin: -10px 0;
-    padding: 0 22px;
-  }  */
-
+  .category__data {
+    height: 64px;
+  }
+  
+ 
 }
 
 
