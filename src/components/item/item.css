@@ -35,7 +35,6 @@
     padding: 13px 10px; 
     min-height: 0;
     height: 321px;
-
   }
   .item__image {
     /*setted inline: "backgroundImage: `url(${mediaCollection[0].thumbUrl})`" */
@@ -52,5 +51,13 @@
 @media (max-width: 375px) {
   .item {
     margin: 5px;
+  }
+  .item__image {
+    /*setted inline: "backgroundImage: `url(${mediaCollection[0].thumbUrl})`" */
+    height: 145px;
+    background-size: auto 130px;
+  }
+  .item__name {
+    height: 62px;
   }
 }
