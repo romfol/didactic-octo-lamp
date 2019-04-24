@@ -50,6 +50,7 @@
 
 @media (max-width: 375px) {
   .item {
+    height: 264px;
     margin: 5px;
   }
   .item__image {

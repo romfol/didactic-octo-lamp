@@ -19,9 +19,6 @@
 }
 
 .item__outer-circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   border:2px solid black;
   width:27px;
@@ -30,7 +27,21 @@
 
 @media (max-width: 1024px) {
   .item__buttons {
-    margin-top: 11px;
+    margin-top: 25px;
+  }
+
+  .item__buttons button {
+    margin-right: 5px; 
+    width: 10px;
+    height:12px;
+    top: 2px; left:0.4px;    
+  }
+
+  .item__outer-circle {
+    border-radius: 50%;
+    border:2px solid black;
+    width:15px;
+    height:15px;
   }
 }
 
