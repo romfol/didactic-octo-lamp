@@ -30,6 +30,10 @@
     margin-top: 25px;
   }
 
+  
+}
+
+@media (max-width: 375px) {
   .item__buttons button {
     margin-right: 5px; 
     width: 10px;

@@ -1,11 +1,12 @@
 import React from 'react';
-import './home.css';
 import { Link } from 'react-router-dom';
+import Slider from '../slider/slider';
+import './home.css';
 
 const Home = () => {
   return (
     <section className="home">
-      <h1>Hello home page</h1>
+      <Slider />
       <Link to="products">Go to Category</Link>
     </section>
   );
