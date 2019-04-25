@@ -24,7 +24,7 @@ export default class SimpleSlider extends Component {
       infinite: true,
       speed: 1000,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 10000,
       pauseOnHover: true,
       slidesToShow,
       slidesToScroll: 1,
