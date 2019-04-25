@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import Item from '../item/item';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import './slider.css';
+import { ArrowLeft, ArrowRight } from '../icons/';
 
 export default class SimpleSlider extends Component {
   goSlideForward = () => {
@@ -14,6 +16,8 @@ export default class SimpleSlider extends Component {
   };
 
   render() {
+    const { slidesToShow } = this.props;
+
     const settings = {
       accessibility: true,
       arrows: true,
@@ -22,14 +26,18 @@ export default class SimpleSlider extends Component {
       autoplay: true,
       autoplaySpeed: 5000,
       pauseOnHover: true,
-      slidesToShow: 6,
+      slidesToShow,
       slidesToScroll: 1,
     };
 
     return (
-      <section>
-        <button onClick={this.goSlideForward}>Go forward</button>
-        <button onClick={this.goSlideBack}>Go Back</button>
+      <section className="slider">
+        <button onClick={this.goSlideBack} className="slider__go-back-button">
+          <ArrowLeft />
+        </button>
+        <button onClick={this.goSlideForward} className="slider__go-forward-button">
+          <ArrowRight />
+        </button>
         <Slider {...settings} ref={slider => (this.slider = slider)}>
           {this.props.data.map(item => (
             <Item key={item.id} className="item" {...item} />

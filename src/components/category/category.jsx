@@ -3,7 +3,7 @@ import Item from '../item/item';
 import { Pagination } from '../pagination/pagination';
 import { ArrowDown } from '../icons';
 import { CategoryTitleLoader } from '../loader/category-title-loader';
-import './category.css';
+import './category.scss';
 import axios from 'axios';
 
 export default class Category extends Component {

@@ -23,9 +23,11 @@ export default class Home extends Component {
   }
 
   render() {
+    const { data } = this.state;
     return (
       <section className="home">
-        <Slider data={this.state.data} />
+        <Slider data={data} slidesToShow={6} />
+        <Slider data={data} slidesToShow={3} />
         <br />
         <Link to="products">Go to Category</Link>
       </section>
