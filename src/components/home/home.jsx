@@ -11,7 +11,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     axios
-      .get(`https://qa-api.wovenlyrugs.com/products?page=1&page_size=20&size=runners&group=Rug`)
+      .get(`https://qa-api.wovenlyrugs.com/products?page=1&page_size=10&size=runners&group=Rug`)
       .then(response => {
         this.setState({
           data: response.data.result.data,
@@ -25,9 +25,15 @@ export default class Home extends Component {
   render() {
     const { data } = this.state;
     return (
-      <section className="home">
-        <Slider data={data} slidesToShow={6} />
-        <Slider data={data} slidesToShow={3} />
+      <section className="home-page">
+        <article className="popular">
+          <h2 className="title">Popular</h2>
+          <Slider data={data} slidesToShow={6} />
+        </article>
+        <article className="new">
+          <h2 className="title">New</h2>
+          <Slider data={data} slidesToShow={3} />
+        </article>
         <br />
         <Link to="products">Go to Category</Link>
       </section>

@@ -1,20 +1,20 @@
-.category a {
-  display: block;
-  text-align: center;
-}
+.category {
+  a {
+    display: block;
+    text-align: center;
+  }
 
-.category__data {
-  height: 67px;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-}
+  .category__title {
+    font-weight: bold;
+  }
 
-.category__title {
-  font-weight: bold;
-}
-
-.category__sort {
+  .category__data {
+    height: 67px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  .category__sort {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,6 +27,7 @@
     font-weight: 700;
     font-size: 13px;
     cursor: pointer;
+  }
 }
 
  .items {

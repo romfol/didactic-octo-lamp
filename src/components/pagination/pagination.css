@@ -11,21 +11,20 @@
   font-weight: 600;
 }
 
-.pagination button {
+.go-back-button, .go-forward-button {
   border: 1px solid #056551;
   padding: 11px 23px;
   background-color: white;
 }
 
-.pagination button:hover {
+.go-back-button:hover,  .go-forward-button:hover{
   background-color: yellowgreen;
 }
 
-.pagination__go-back-button {
+.go-back-button {
   border-radius: 5px 0 0 5px;
 }
 
-
-.pagination__go-forward-button {
+.go-forward-button {
   border-radius: 0 5px 5px 0;
 }

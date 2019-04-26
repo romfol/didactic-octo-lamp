@@ -16,11 +16,7 @@ export const Pagination = ({
   return (
     !isNaN(totalItems) && (
       <section className="pagination">
-        <button
-          onClick={goPageBack}
-          disabled={activePage <= 1}
-          className="pagination__go-back-button"
-        >
+        <button onClick={goPageBack} disabled={activePage <= 1} className="go-back-button">
           <ArrowLeft />
         </button>
         <span className="pagination__data">
@@ -29,7 +25,7 @@ export const Pagination = ({
         <button
           onClick={goPageForward}
           disabled={activePage === pagesAmount()}
-          className="pagination__go-forward-button"
+          className="go-forward-button"
         >
           <ArrowRight />
         </button>

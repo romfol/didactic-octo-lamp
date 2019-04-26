@@ -32,12 +32,14 @@ export default class SimpleSlider extends Component {
 
     return (
       <section className="slider">
-        <button onClick={this.goSlideBack} className="slider__go-back-button">
-          <ArrowLeft />
-        </button>
-        <button onClick={this.goSlideForward} className="slider__go-forward-button">
-          <ArrowRight />
-        </button>
+        <div className="slider__move-buttons">
+          <button onClick={this.goSlideBack} className="go-back-button">
+            <ArrowLeft />
+          </button>
+          <button onClick={this.goSlideForward} className="go-forward-button">
+            <ArrowRight />
+          </button>
+        </div>
         <Slider {...settings} ref={slider => (this.slider = slider)}>
           {this.props.data.map(item => (
             <Item key={item.id} className="item" {...item} />
