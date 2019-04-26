@@ -1,5 +1,5 @@
 import React from 'react';
-import './item.css';
+import './item.scss';
 import ItemButtons from '../item-buttons/item-buttons';
 
 const Item = props => {

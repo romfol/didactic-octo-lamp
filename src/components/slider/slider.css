@@ -2,3 +2,8 @@
   text-align: right;
   height: 45px;
 }
+
+/* got a classname from a custom slick-slider classes */
+.slick-list {
+  margin: 6px -10px 0 -8px;
+}

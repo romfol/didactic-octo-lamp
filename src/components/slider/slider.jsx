@@ -42,7 +42,7 @@ export default class SimpleSlider extends Component {
         </div>
         <Slider {...settings} ref={slider => (this.slider = slider)}>
           {this.props.data.map(item => (
-            <Item key={item.id} className={`item item_${className}`} {...item} />
+            <Item key={item.id} className={`item item${className}`} {...item} />
           ))}
         </Slider>
       </section>
