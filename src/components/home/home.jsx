@@ -28,11 +28,11 @@ export default class Home extends Component {
       <section className="home-page">
         <article className="popular">
           <h2 className="title">Popular</h2>
-          <Slider data={data} slidesToShow={6} />
+          <Slider data={data} slidesToShow={6} className="_popular" />
         </article>
         <article className="new">
           <h2 className="title">New</h2>
-          <Slider data={data} slidesToShow={3} />
+          <Slider data={data} slidesToShow={3} className="_new" />
         </article>
         <br />
         <Link to="products">Go to Category</Link>

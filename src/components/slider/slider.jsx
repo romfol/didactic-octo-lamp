@@ -16,7 +16,7 @@ export default class SimpleSlider extends Component {
   };
 
   render() {
-    const { slidesToShow } = this.props;
+    const { slidesToShow, className } = this.props;
 
     const settings = {
       accessibility: true,
@@ -42,7 +42,7 @@ export default class SimpleSlider extends Component {
         </div>
         <Slider {...settings} ref={slider => (this.slider = slider)}>
           {this.props.data.map(item => (
-            <Item key={item.id} className="item" {...item} />
+            <Item key={item.id} className={`item item_${className}`} {...item} />
           ))}
         </Slider>
       </section>
