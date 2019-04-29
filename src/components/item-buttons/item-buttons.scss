@@ -40,10 +40,24 @@
   }
 
   .item__outer-circle {
-    border-radius: 50%;
     border:2px solid black;
     width:15px;
     height:15px;
+  }
+}
+
+.item_popular {
+  .item__outer-circle {
+    border:1px solid black;
+    width:15px;
+    height:12px;
+  }
+
+  .item__buttons button {
+    margin-right: 5px; 
+    width: 8px;
+    height:10px;
+    top: 2px; left:0.4px;    
   }
 }
 

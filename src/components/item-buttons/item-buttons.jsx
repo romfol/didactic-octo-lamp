@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './item-buttons.css';
+import './item-buttons.scss';
 import { colorsButtons as colors } from '../helpers';
 
 export default class ItemButtons extends Component {

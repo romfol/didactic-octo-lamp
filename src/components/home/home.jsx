@@ -11,7 +11,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     axios
-      .get(`https://qa-api.wovenlyrugs.com/products?page=1&page_size=10&size=runners&group=Rug`)
+      .get(`https://qa-api.wovenlyrugs.com/products?page=10&page_size=10&size=runners&group=Rug`)
       .then(response => {
         this.setState({
           data: response.data.result.data,
