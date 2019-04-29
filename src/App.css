@@ -3,3 +3,13 @@ main {
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: 'GraphikRegular';
+  src: local('Regular'), url(./fonts/Graphik-Regular-Web.woff) format('woff');
+
+  font-family: 'GraphikMedium ';
+  src: local('Medium'), url(./fonts/Graphik-Medium-Web.woff) format('woff');
+
+  font-family: 'GraphikSemibold';
+  src: local('Semibold'), url(./fonts/Graphik-Semibold-Web.woff) format('woff');
+}

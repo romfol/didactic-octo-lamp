@@ -1,6 +1,6 @@
 import React from 'react';
 import './filters.css';
-import { filterButtons as buttons } from '../helpers';
+import { filterButtons as buttons } from '../../helpers';
 
 export const Filters = () => {
   return (
