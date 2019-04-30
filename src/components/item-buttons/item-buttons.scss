@@ -34,17 +34,20 @@
 }
 
 @media (max-width: 375px) {
-  .item__buttons button {
-    margin-right: 5px; 
-    width: 10px;
-    height:12px;
-    top: 2px; left:0.4px;    
+  .item__buttons {
+    margin: 32px 0 0 -3px;
+  }  
+
+  .item__buttons > div {
+    width:14px;
+    height:14px;
+    border:1px solid black;
   }
 
-  .item__outer-circle {
-    border:2px solid black;
-    width:15px;
-    height:15px;
+  .item__buttons button {
+    width:10px;
+    height:12px;
+    border: 1px solid #F0F0F0; 
   }
 }
 

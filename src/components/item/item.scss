@@ -63,7 +63,13 @@
     background-size: auto 130px;
   }
   .item__name {
-    height: 62px;
+    height: 60px;
+  }
+  .item__old-price {
+    margin-right: 17px;
+  }
+  .item__price {
+    font-weight: 600;
   }
 }
 
