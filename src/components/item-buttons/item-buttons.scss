@@ -62,10 +62,26 @@
     width:14px;
     height:14px;
   }
-
   .item__buttons button {
     width: 10px;
     height: 12px;
+  }
+}
+
+.item_new {
+   min-height: 541px;
+  .item__buttons {
+    margin: 63px 0 0 25px;
+  }
+  .item__buttons > div {
+    margin-right: 2px;
+    width:37px;
+    height:34px;
+  }
+  .item__buttons button {
+    width:28px;
+    height:27px;
+  
   }
 }
 
