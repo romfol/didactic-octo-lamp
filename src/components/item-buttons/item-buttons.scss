@@ -1,28 +1,34 @@
 .item__buttons {
-  margin: 14px 0 0 1px;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.item__buttons div {
-  display: inline-block;
+.item__buttons > div {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:27px;
+  height:27px;
+  border-radius: 50%;
+  border:2px solid black;
+}
+
+.item__buttons > div button {
+  visibility: visible;
+}
+
+.item__buttons .item__outer-circle {
+  visibility: visible;
 }
 
 .item__buttons button {
-  display: flex;
-  border-radius: 50%;
-  margin-right: 10px; 
   width:22px;
   height:22px;
-  border: 1px solid #F0F0F0; 
-  position: relative;
-  top: 3px; left:2px;    
-  cursor: pointer;
-}
-
-.item__outer-circle {
   border-radius: 50%;
-  border:2px solid black;
-  width:27px;
-  height:27px;
+  border: 1px solid #F0F0F0; 
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {

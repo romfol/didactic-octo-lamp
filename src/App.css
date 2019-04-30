@@ -5,11 +5,11 @@ main {
 
 @font-face {
   font-family: 'GraphikRegular';
-  src: local('Regular'), url(./fonts/Graphik-Regular-Web.woff) format('woff');
+  src:  url(./fonts/Graphik-Regular-Web.woff);
 
   font-family: 'GraphikMedium ';
-  src: local('Medium'), url(./fonts/Graphik-Medium-Web.woff) format('woff');
+  src:  url(./fonts/Graphik-Medium-Web.woff);
 
   font-family: 'GraphikSemibold';
-  src: local('Semibold'), url(./fonts/Graphik-Semibold-Web.woff) format('woff');
+  src: url(./fonts/Graphik-Semibold-Web.woff);
 }

@@ -15,7 +15,7 @@
 }
 
 .item__name {
-  font-family: GraphikSemibold;
+  font-family: GraphikSemibold, sans-serif;
   word-wrap: break-word;
   font-weight: bold;
 }
@@ -76,5 +76,17 @@
   }
   .item__old-price {
     margin-right: 5px;
+  }
+}
+
+.item_new {
+  padding: 0;
+
+  .item__image {
+    height: 338px;
+    background-size:  cover;
+  }
+  .item__name {
+    margin: 25px 0 0 25px;
   }
 }
