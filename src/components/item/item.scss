@@ -75,13 +75,16 @@
 
 .item_popular {
   padding: 13px 10px; 
-  
+
   .item__image {
     height: 175px;
     background-size: 100px 150px;
   } 
   .item__name {
     height: 35px;
+  }
+  .item__prices {
+    height: 27px;
   }
   .item__old-price {
     margin-right: 5px;

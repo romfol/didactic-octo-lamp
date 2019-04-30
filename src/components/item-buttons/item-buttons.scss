@@ -52,17 +52,21 @@
 }
 
 .item_popular {
-  .item__outer-circle {
+  min-height: 0;
+  height: 304px;
+  .item__buttons {
+    margin-left: -3px;
+  }
+  .item__buttons > div {
     border:1px solid black;
-    width:15px;
-    height:12px;
+    width:14px;
+    height:14px;
   }
 
   .item__buttons button {
-    margin-right: 5px; 
-    width: 8px;
-    height:10px;
-    top: 2px; left:0.4px;    
+    width: 10px;
+    height: 12px;
   }
 }
+
 
