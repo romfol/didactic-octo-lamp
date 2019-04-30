@@ -1,7 +1,7 @@
 .item__buttons {
-  margin-top: 14px;
+  margin-top: 13px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .item__buttons > div {
@@ -9,23 +9,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width:27px;
-  height:27px;
+  width:26px;
+  height:26px;
   border-radius: 50%;
   border:2px solid black;
 }
 
-.item__buttons > div button {
-  visibility: visible;
-}
-
-.item__buttons .item__outer-circle {
+.item__buttons > div button, .item__buttons .item__outer-circle {
   visibility: visible;
 }
 
 .item__buttons button {
-  width:22px;
-  height:22px;
+  width:21px;
+  height:21px;
   border-radius: 50%;
   border: 1px solid #F0F0F0; 
   cursor: pointer;
