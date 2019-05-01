@@ -34,7 +34,6 @@ export default class Home extends Component {
           <h2 className="title">New</h2>
           <Slider data={data} slidesToShow={3} className="_new" />
         </article>
-        <br />
         <Link to="products">Go to Category</Link>
       </section>
     );
