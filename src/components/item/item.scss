@@ -94,8 +94,8 @@
 }
 
 .item_new {
+  min-height: 541px;
   padding: 0;
-
   .item__image {
     height: 338px;
     background-size:  cover;
@@ -118,6 +118,18 @@
     .item__prices {
       font-family: GraphikRegular;
       font-size: 14px;
+    }
+  }
+  .item_new {
+    min-height: 447px;
+    .item__image {
+      height: 251px
+    }
+    .item__name {
+      margin: 20px 0 0 21px;
+    }
+    .item__prices {
+      margin: 35px 0 0 21px;
     }
   }
 }
