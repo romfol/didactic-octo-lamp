@@ -10,7 +10,7 @@ export default class ItemButtons extends Component {
 
     const buttons = colors.map((color, i) => {
       return (
-        <div className={activeButtonIndex === i ? 'item__outer-circle': ''} key={i}>
+        <div className={activeButtonIndex === i ? 'item__outer-circle' : ''} key={i}>
           <button
             onClick={() => this.setState({ activeButtonIndex: i })}
             style={{ backgroundColor: color }}

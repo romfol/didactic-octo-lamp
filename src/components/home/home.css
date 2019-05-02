@@ -4,6 +4,10 @@
   float: left;
 } 
 
-/* .popular {
+.popular {
   height: 400px;
-} */
+}
+
+.new {
+  height: 620px;
+}
