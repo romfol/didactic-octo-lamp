@@ -16,7 +16,7 @@ export default class SimpleSlider extends Component {
   };
 
   render() {
-    const { slidesToShow, className } = this.props;
+    const { slidesToShow, className, slidesUnder1101PxResolution = 3 } = this.props;
 
     const settings = {
       accessibility: true,
@@ -28,6 +28,14 @@ export default class SimpleSlider extends Component {
       pauseOnHover: true,
       slidesToShow,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1101,
+          settings: {
+            slidesToShow: slidesUnder1101PxResolution,
+          },
+        },
+      ],
     };
 
     return (
