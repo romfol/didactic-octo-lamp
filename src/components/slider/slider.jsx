@@ -35,6 +35,12 @@ export default class SimpleSlider extends Component {
             slidesToShow: slidesUnder1101PxResolution,
           },
         },
+        {
+          breakpoint: 376,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
       ],
     };
 
