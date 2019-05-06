@@ -91,9 +91,26 @@
 @media (max-width: 375px) {
   .item_popular {
    .item__buttons {
-     margin-top: 18px;
+     margin-top: 5px; ;
    }
   }
+  .item_new {
+    .item__buttons {
+      margin: 30px 0 0 5px; 
+    }
+    .item__buttons > div {
+      width:14px;
+      height:14px;
+      border:1px solid black;
+    }
+  
+    .item__buttons button {
+      width:10px;
+      height:12px;
+      border: 1px solid #F0F0F0; 
+    }
+   }
+   
 }
 
 

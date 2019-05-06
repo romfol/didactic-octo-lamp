@@ -147,4 +147,19 @@
       font-family: GraphikMedium, sans-serif;
     }
   }
+
+  .item_new {
+    height: 250px;
+    min-height: 0;
+    .item__image {
+      height: 150px; 
+    }
+    .item__name {
+      margin: 8px 0  0 9px;
+      height: 25px;
+    }
+    .item__prices {
+      margin: 0 0 0 10px;
+    }
+  }
 }
