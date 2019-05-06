@@ -27,7 +27,7 @@ export default class SimpleSlider extends Component {
       autoplaySpeed: 10000,
       pauseOnHover: true,
       slidesToShow,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       responsive: [
         {
           breakpoint: 1101,
@@ -36,7 +36,7 @@ export default class SimpleSlider extends Component {
           },
         },
         {
-          breakpoint: 376,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
           },

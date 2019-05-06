@@ -3,19 +3,20 @@
   height: 45px;
 }
 
-
 /* got a classname from a custom slick-slider classes */
 .slick-list {
   margin: 6px -10px 0 -8px;
 }
 
 @media (max-width: 375px) {
+   .slider {
+    /* position: relative; */
+   }
+
   .slick-list {
     margin: 0 6px;
   }
-  .slider__move-buttons {
-    position: relative;
-    top: 322px;
-    right: 228px;
+  .slider__move-buttons { 
+    transform: translate(calc(-100% + 148px) , 321px);
   }
 }
