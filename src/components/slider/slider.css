@@ -7,3 +7,9 @@
 .slick-list {
   margin: 6px -10px 0 -8px;
 }
+
+@media (max-width: 375px) {
+  .slick-list {
+    margin: 0 6px;
+  }
+}

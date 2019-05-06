@@ -133,3 +133,12 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .item_popular {
+    .item__image {
+      height: 145px;
+      background-size: auto 130px
+    }
+  }
+}

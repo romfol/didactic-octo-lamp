@@ -17,3 +17,8 @@
     margin: 0 72px 0 68px;
   }
 } 
+@media (max-width: 375px) {
+  .home-page {
+    margin: 0;
+  }
+} 
