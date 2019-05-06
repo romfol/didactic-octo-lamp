@@ -3,6 +3,7 @@
   height: 45px;
 }
 
+
 /* got a classname from a custom slick-slider classes */
 .slick-list {
   margin: 6px -10px 0 -8px;
@@ -11,5 +12,10 @@
 @media (max-width: 375px) {
   .slick-list {
     margin: 0 6px;
+  }
+  .slider__move-buttons {
+    position: relative;
+    top: 322px;
+    right: 228px;
   }
 }

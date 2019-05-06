@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from '../slider/slider';
 import axios from 'axios';
-import './home.css';
+import './home.scss';
 
 export default class Home extends Component {
   state = {
