@@ -21,4 +21,8 @@
   .home-page {
     margin: 0;
   }
+
+  .popular {
+    height: 350px;
+  }
 } 

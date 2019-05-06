@@ -88,5 +88,12 @@
    }
   }
 }
+@media (max-width: 375px) {
+  .item_popular {
+   .item__buttons {
+     margin-top: 18px;
+   }
+  }
+}
 
 

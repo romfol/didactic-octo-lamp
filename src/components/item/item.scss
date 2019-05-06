@@ -136,9 +136,17 @@
 
 @media (max-width: 375px) {
   .item_popular {
+
+    min-height: 200px;
+    height: 223px;
     .item__image {
       height: 145px;
       background-size: auto 130px
     }
+    .item__name {
+    height: 20px;
+      font-family: GraphikMedium, sans-serif;
+    }
+    
   }
 }
