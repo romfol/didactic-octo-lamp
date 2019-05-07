@@ -1,9 +1,10 @@
 .slider__move-buttons {
   text-align: right;
   height: 45px;
+  padding-top: 5px;
 }
 
-/* got a classname from a custom slick-slider classes */
+/* got a classname from a default slick-slider classes */
 .slick-list {
   margin: 6px -10px 0 -8px;
 }
