@@ -10,10 +10,6 @@
 }
 
 @media (max-width: 375px) {
-   .slider {
-    /* position: relative; */
-   }
-
   .slick-list {
     margin: 0 6px;
   }

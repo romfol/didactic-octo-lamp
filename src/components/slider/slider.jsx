@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Slider from 'react-slick';
 import Item from '../item/item';
 import 'slick-carousel/slick/slick.css';
@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import './slider.css';
 import { ArrowLeft, ArrowRight } from '../icons/';
 
-export default class SimpleSlider extends Component {
+export default class SimpleSlider extends PureComponent {
   goSlideForward = () => {
     this.slider.slickNext();
   };
@@ -16,7 +16,7 @@ export default class SimpleSlider extends Component {
   };
 
   render() {
-    const { slidesToShow, className, slidesUnder1101PxResolution = 3 } = this.props;
+    const { data, slidesToShow, className, slidesUnder1101PxResolution = 3 } = this.props;
 
     const settings = {
       accessibility: true,
@@ -55,7 +55,7 @@ export default class SimpleSlider extends Component {
           </button>
         </div>
         <Slider {...settings} ref={slider => (this.slider = slider)}>
-          {this.props.data.map(item => (
+          {data.map(item => (
             <Item key={item.id} className={`item item${className}`} {...item} />
           ))}
         </Slider>

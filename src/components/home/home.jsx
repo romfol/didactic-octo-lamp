@@ -24,6 +24,7 @@ export default class Home extends Component {
 
   render() {
     const { data } = this.state;
+
     return (
       <section className="home-page">
         <article className="popular">
