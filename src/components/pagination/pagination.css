@@ -6,9 +6,18 @@
 .pagination__data {
   border-top: 1px solid #056551;
   border-bottom: 1px solid #056551;
-  padding: 13px 41px 11px 49px;
+  width: 180px;
+  padding: 13px 0 11px 0;
   font-size: 14px;
   font-weight: 600;
+  text-align: center;
+  color: #056551;
+}
+
+
+.pagination__active-page {
+  display: inline-block;
+  width: 12px;
 }
 
 .go-back-button, .go-forward-button {

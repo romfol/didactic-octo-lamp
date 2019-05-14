@@ -20,7 +20,7 @@ export const Pagination = ({
           <ArrowLeft />
         </button>
         <span className="pagination__data">
-          PAGE {loaded ? activePage : <ActivePageLoader />} OF {pagesAmount()}
+          PAGE <span className="pagination__active-page">{loaded ? activePage : <ActivePageLoader />}</span> OF {pagesAmount()}
         </span>
         <button
           onClick={goPageForward}
