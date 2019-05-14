@@ -6,6 +6,12 @@
   border-radius: 5px;
 }
 
+.item:hover {
+  position: relative;
+  bottom: 7px;
+  box-shadow: 3px -2px 5px 0px #056551;
+}
+
 .item__image {
   /*setted inline: "backgroundImage: `url(${mediaCollection[0].thumbUrl})`" */
   height: 255px;
