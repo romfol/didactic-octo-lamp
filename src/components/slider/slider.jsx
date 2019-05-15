@@ -45,31 +45,27 @@ export default class SimpleSlider extends PureComponent {
       ],
     };
 
-    if (data.length === 0) {
-      return (
-        <section className="slider">
-          <div className="slider__move-buttons">
-            <button onClick={this.goSlideBack} className="go-back-button">
-              <ArrowLeft />
-            </button>
-            <button onClick={this.goSlideForward} className="go-forward-button">
-              <ArrowRight />
-            </button>
-          </div>
-          <Slider {...settings} ref={slider => (this.slider = slider)}>
-            {[...Array(slidesToShow)].map((i, index) => (
-              <div key={index}>
-                <div className="slider__loader">
-                  <SliderLoader />
-                </div>
+    return data.length === 0 ? (
+      <section className="slider">
+        <div className="slider__move-buttons">
+          <button onClick={this.goSlideBack} className="go-back-button">
+            <ArrowLeft />
+          </button>
+          <button onClick={this.goSlideForward} className="go-forward-button">
+            <ArrowRight />
+          </button>
+        </div>
+        <Slider {...settings} ref={slider => (this.slider = slider)}>
+          {[...Array(slidesToShow)].map((i, index) => (
+            <div key={index}>
+              <div className="slider__loader">
+                <SliderLoader />
               </div>
-            ))}
-          </Slider>
-        </section>
-      );
-    }
-
-    return (
+            </div>
+          ))}
+        </Slider>
+      </section>
+    ) : (
       <section className="slider">
         <div className="slider__move-buttons">
           <button onClick={this.goSlideBack} className="go-back-button">
