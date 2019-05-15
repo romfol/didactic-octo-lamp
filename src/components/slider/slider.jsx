@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './slider.css';
 import { ArrowLeft, ArrowRight } from '../icons/';
-import { ActivePageLoader } from '../loader/active-page-loader';
+import { ActivePageLoader as SliderLoader } from '../loader/active-page-loader';
 
 export default class SimpleSlider extends PureComponent {
   goSlideForward = () => {
@@ -17,7 +17,7 @@ export default class SimpleSlider extends PureComponent {
   };
 
   render() {
-    let { data, slidesToShow, className, slidesUnder1101PxResolution = 3 } = this.props;
+    const { data, slidesToShow, className, slidesUnder1101PxResolution = 3 } = this.props;
 
     const settings = {
       accessibility: true,
@@ -57,8 +57,12 @@ export default class SimpleSlider extends PureComponent {
             </button>
           </div>
           <Slider {...settings} ref={slider => (this.slider = slider)}>
-            {[...Array(slidesToShow)].map(() => (
-              <ActivePageLoader />
+            {[...Array(slidesToShow)].map((i, index) => (
+              <div key={index}>
+                <div className="slider__loader">
+                  <SliderLoader />
+                </div>
+              </div>
             ))}
           </Slider>
         </section>

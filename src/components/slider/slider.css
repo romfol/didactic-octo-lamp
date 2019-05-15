@@ -4,6 +4,13 @@
   padding-top: 5px;
 }
 
+.slider__loader {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 352px;
+}
+
 /* got a classname from a default slick-slider classes */
 .slick-list {
   margin: 6px -10px 0 -8px;
