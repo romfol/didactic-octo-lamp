@@ -57,7 +57,7 @@ export default class SimpleSlider extends PureComponent {
         </div>
         <Slider {...settings} ref={slider => (this.slider = slider)}>
           {data.length === 0
-            ? [...Array(slidesToShow)].map((i, index) => (
+            ? [...new Array(slidesToShow)].map((i, index) => (
                 <div key={index}>
                   <div className="slider__loader">
                     <SliderLoader />
